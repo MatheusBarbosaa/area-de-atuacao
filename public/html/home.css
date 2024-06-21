@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+/* Seus estilos personalizados aqui */
+.fonte {
+    font-family: 'Montserrat';
+    color: #012f3f;
+    text-align: left; /* Centraliza o texto */
+    font-size: 35px;
+}
+
+.fonte01 {
+    font-family: 'Montserrat';
+    color: #012f3f;
+    text-align: left; /* Centraliza o texto */
+    font-size: 30px;
+}
+
+.sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #d3e8f2;
+    padding-top: 20px;
+}
+
+.sidebar h2 {
+    color: #012f3f;
+    text-align: center; /* Centraliza o texto */
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 10px;
+    text-align: left; /* Alinha o texto à esquerda */
+}
+
+.sidebar ul li a {
+    color: #012f3f;
+    text-decoration: none;
+}
+
+.sidebar ul li a:hover {
+    background-color: #d3d3d3;
+}
+
+.lateral {
+    font-family: 'Poppins';
+}
+
+.content {
+    margin-left: 250px;
+    padding: 20px;
+}
+
+h1,
+h2 {
+    text-align: center; /* Centraliza os títulos */
+    color: #333;
+}
+
+#book-form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="textarea"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}

@@ -4,8 +4,10 @@
 .fonte {
     font-family: 'Montserrat', sans-serif;
     color: #012f3f;
-    font-size: 30px; /* Reduzindo o tamanho para "Escolha sua" */
-    font-weight: 400; /* Fazendo mais fino */
+    font-size: 30px;
+    /* Reduzindo o tamanho para "Escolha sua" */
+    font-weight: 400;
+    /* Fazendo mais fino */
 }
 
 .fonte01 {
@@ -13,9 +15,18 @@
     color: #012f3f;
     text-align: left;
     font-size: 30px;
-    font-weight: 700; /* Mantendo "ÁREA DE ATUAÇÃO:" mais forte */
+    font-weight: 500;
+    /* Mantendo "ÁREA DE ATUAÇÃO:" mais forte */
 }
 
+/* Reset de margens e padding */
+/* Reset de margens e padding */
+body, ul, li, h1, h2 {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para a sidebar */
 .sidebar {
     height: 100%;
     width: 260px;
@@ -26,37 +37,53 @@
     padding-top: 20px;
 }
 
+.sidebar .alinhar {
+    padding: 20px;
+}
+
 .sidebar h2 {
     color: #012f3f;
-    text-align: center;
-    margin-bottom: 0; /* Evita espaço extra abaixo do título */
+    text-align: left;
+    margin-bottom: px; /* Ajustando o espaçamento abaixo do h2 */
+}
+
+.sidebar h1 {
+    color: #012f3f;
+    text-align: left;
+    font-weight: 500;
+    margin-bottom: 20px; /* Ajustando o espaçamento abaixo do h1 */
 }
 
 .sidebar ul {
     list-style-type: none;
     padding: 0;
+    margin-top: 20px; /* Espaçamento entre o título e a lista */
 }
 
 .sidebar ul li {
-    padding: 10px;
+    padding: 0;
     text-align: left;
 }
 
 .sidebar ul li a {
+    display: block; /* Faz com que o link ocupe toda a área do li */
+    padding: 10px 20px; /* Ajusta o padding para tornar a área clicável maior */
     color: #012f3f;
     text-decoration: none;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
 .sidebar ul li a:hover {
     background-color: #dbd9d9;
     color: #1a29b1;
-    transition: all ease-in-out .3s;
 }
 
 .lateral {
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
 }
+
+
 
 .content {
     margin-left: 250px;
@@ -103,3 +130,9 @@ button[type="submit"]:hover {
     background-color: #45a049;
 }
 
+/* Estilos para os ícones */
+.icon-small {
+    width: 20px; /* Define o tamanho dos ícones */
+    margin-right: 10px; /* Espaçamento entre os ícones */
+    vertical-align: middle; /* Alinha os ícones verticalmente */
+}

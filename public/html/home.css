@@ -1,23 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-/* Seus estilos personalizados aqui */
+
 .fonte {
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     color: #012f3f;
-    text-align: left;
-    font-size: 35px;
+    font-size: 30px; /* Reduzindo o tamanho para "Escolha sua" */
+    font-weight: 400; /* Fazendo mais fino */
 }
 
 .fonte01 {
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     color: #012f3f;
     text-align: left;
     font-size: 30px;
+    font-weight: 700; /* Mantendo "ÁREA DE ATUAÇÃO:" mais forte */
 }
 
 .sidebar {
     height: 100%;
-    width: 250px;
+    width: 260px;
     position: fixed;
     top: 0;
     left: 0;
@@ -28,6 +29,7 @@
 .sidebar h2 {
     color: #012f3f;
     text-align: center;
+    margin-bottom: 0; /* Evita espaço extra abaixo do título */
 }
 
 .sidebar ul {
@@ -50,7 +52,7 @@
 }
 
 .lateral {
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
 }
 
 .content {
@@ -63,6 +65,7 @@ h2 {
     text-align: center;
     color: #333;
 }
+
 
 #book-form {
     max-width: 400px;

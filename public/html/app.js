@@ -22,13 +22,6 @@ document.getElementById('engenharia-link').addEventListener('click', function (e
     event.preventDefault();
     showOnlySelectedArea('bootstrap-example-engenharia');
 });
-/*
-document.getElementById('tecnologia-link').addEventListener('click', function (event) {
-    event.preventDefault();
-    showOnlySelectedArea('bootstrap-example');
-});
-
-
 
 document.getElementById('negocios-link').addEventListener('click', function (event) {
     event.preventDefault();
@@ -40,11 +33,21 @@ document.getElementById('saude-link').addEventListener('click', function (event)
     showOnlySelectedArea('bootstrap-example-saude');
 });
 
+document.getElementById('saude-link').addEventListener('click', function (event) {
+    event.preventDefault();
+    showOnlySelectedArea('bootstrap-example-saude');
+});
+
+document.getElementById('tecnologia-link').addEventListener('click', function (event) {
+    event.preventDefault();
+    showOnlySelectedArea('bootstrap-example-tecnologia');
+});
+
 document.getElementById('todos-link').addEventListener('click', function (event) {
     event.preventDefault();
     showAllAreas();
 });
-*/
+
 
 function showOnlySelectedArea(areaId) {
     const areaContents = document.querySelectorAll('.area-content');

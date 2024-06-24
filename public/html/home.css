@@ -20,7 +20,6 @@
 }
 
 /* Reset de margens e padding */
-/* Reset de margens e padding */
 body, ul, li, h1, h2 {
     margin: 0;
     padding: 0;
@@ -35,6 +34,7 @@ body, ul, li, h1, h2 {
     left: 0;
     background-color: #d3e8f2;
     padding-top: 20px;
+    box-shadow: #333 2px 0 10px;
 }
 
 .sidebar .alinhar {

@@ -136,3 +136,7 @@ button[type="submit"]:hover {
     margin-right: 10px; /* Espaçamento entre os ícones */
     vertical-align: middle; /* Alinha os ícones verticalmente */
 }
+
+.card {
+    box-shadow: #333 2px 0 5px;
+}

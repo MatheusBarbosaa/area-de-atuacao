@@ -60,8 +60,3 @@ function showAllAreas() {
     areaContents.forEach(content => content.style.display = 'block');
 }
 
-
-// JavaScript para abrir/fechar o sidebar no clique do ícone do menu hambúrguer
-document.getElementById('mobile-menu').addEventListener('click', function() {
-    document.getElementById('sidebar').classList.toggle('active');
-});

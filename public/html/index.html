@@ -7,8 +7,169 @@
     <title>Uninassau | Graduação Digital</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="home.css">
     <link rel="shortcut icon" href="img/uninassau_selo.svg" type="image/x-icon">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+        .fonte {
+            font-family: 'Montserrat', sans-serif !important;
+            color: #012f3f !important;
+            font-size: 30px !important;
+            /* Reduzindo o tamanho para "Escolha sua" */
+            font-weight: 550 !important;
+            /* Fazendo mais fino */
+        }
+
+        .fonte01 {
+            font-family: 'Montserrat', sans-serif !important;
+            color: #012f3f !important;
+            text-align: left !important;
+            font-size: 30px !important;
+            font-weight: 550 !important;
+            /* Mantendo "ÁREA DE ATUAÇÃO:" mais forte */
+        }
+
+        /* Reset de margens e padding */
+        body,
+        ul,
+        li,
+        h1,
+        h2 {
+            margin: 0 !important;
+            padding: 0 !important;
+        }
+
+        /* Estilos para a sidebar */
+        .sidebar {
+            height: 100% !important;
+            width: 260px !important;
+            position: fixed !important;
+            top: 0 !important;
+            left: 0 !important;
+            background-color: #d3e8f2 !important;
+            padding-top: 20px !important;
+            box-shadow: #333 2px 0 10px !important;
+            overflow-y: auto !important;
+        }
+
+        .sidebar .alinhar {
+            padding: 20px !important;
+        }
+
+        .sidebar h2 {
+            color: #012f3f !important;
+            text-align: left !important;
+            margin-bottom: px;
+            /* Ajustando o espaçamento abaixo do h2 */
+        }
+
+        .sidebar h1 {
+            color: #012f3f !important;
+            text-align: left !important;
+            font-weight: 500 !important;
+            margin-bottom: 20px !important;
+            /* Ajustando o espaçamento abaixo do h1 */
+        }
+
+        .sidebar ul {
+            list-style-type: none !important;
+            padding: 0 !important;
+            margin-top: 20px !important;
+            /* Espaçamento entre o título e a lista */
+        }
+
+        .sidebar ul li {
+            padding: 0 !important;
+            text-align: left !important;
+        }
+
+        .sidebar ul li a {
+            display: block !important;
+            /* Faz com que o link ocupe toda a área do li */
+            padding: 10px 20px !important;
+            /* Ajusta o padding para tornar a área clicável maior */
+            color: #012f3f !important;
+            text-decoration: none !important;
+            transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out !important;
+        }
+
+        .sidebar ul li a:hover {
+            background-color: #dbd9d9 !important;
+            color: #1a29b1 !important;
+        }
+
+        .lateral {
+            font-family: 'Poppins', sans-serif !important;
+            font-weight: 900 !important;
+            font-size: 17px;
+        }
+
+        .content {
+            margin-left: 250px !important;
+            padding: 20px !important;
+            font-family: 'Poppins', sans-serif !important;
+            flex-grow: 1 !important;
+        }
+
+        h1,
+        h2 {
+            text-align: center !important;
+            color: #333 !important;
+        }
+
+        /* Estilos para os ícones */
+        .icon-small {
+            width: 20px !important;
+            /* Define o tamanho dos ícones */
+            margin-right: 10px !important;
+            /* Espaçamento entre os ícones */
+            vertical-align: middle !important;
+            /* Alinha os ícones verticalmente */
+        }
+
+        .card {
+            box-shadow: #333 2px 0 5px !important;
+        }
+
+        .scollbar {
+            height: 100vh !important;
+            box-sizing: border-box !important;
+            overflow-y: auto !important;
+            overflow-x: hidden !important;
+        }
+
+        .engenharia {
+            margin-top: -660px !important;
+        }
+
+        .negocios {
+            height: 100vh !important;
+            box-sizing: border-box !important;
+            overflow-y: auto !important;
+            overflow-x: hidden !important;
+        }
+
+        .saude {
+            margin-top: -660px !important;
+        }
+
+        .card-title {
+            font-size: 20px !important;
+        }
+
+        .card-text {
+            font-size: 15px !important;
+        }
+
+        .tecnologia {
+            height: 100vh !important;
+            box-sizing: border-box !important;
+            overflow-y: auto !important;
+            overflow-x: hidden !important;
+        }
+    </style>
+
 </head>
 
 <body>
@@ -18,15 +179,16 @@
             <h1 class="fonte01"><strong>ÁREA DE ATUAÇÃO:</strong></h1>
         </div>
         <ul class="lateral">
-            <li><a href="#" id="todos-link" class="todos">Todos</a></li>
-            <li><a href="#" id="arquitetura-e-design-link">Arquitetura e Design</a></li>
-            <li><a href="#" id="ciencias-juridicas-link">Ciências Jurídicas</a></li>
-            <li><a href="#" id="ciencias-humanas-link">Ciências Humanas</a></li>
-            <li><a href="#" id="educacao-link">Educação</a></li>
-            <li><a href="#" id="engenharia-link">Engenharia</a></li>
-            <li><a href="#" id="negocios-link">Negócios</a></li>
-            <li><a href="#" id="saude-link">Saúde</a></li>
-            <li><a href="#" id="tecnologia-link">Tecnologia</a></li>
+
+            <li><a href="arquitetura-e-design-link" id="arquitetura-e-design-link">Arquitetura e Design de
+                    Interiores</a></li>
+            <li><a href="ciencias-juridicas-link" id="ciencias-juridicas-link">Ciências Jurídicas</a></li>
+            <li><a href="ciencias-humanas-link" id="ciencias-humanas-link">Ciências Humanas</a></li>
+            <li><a href="educacao-link" id="educacao-link">Educação</a></li>
+            <li><a href="engenharia-link" id="engenharia-link">Engenharia</a></li>
+            <li><a href="negocios-link" id="negocios-link">Negócios</a></li>
+            <li><a href="saude-link" id="saude-link">Saúde</a></li>
+            <li><a href="tecnologia-link" id="tecnologia-link">Tecnologia</a></li>
         </ul>
     </div>
 
@@ -34,121 +196,51 @@
 
         <!-- --------------------ARQUITETURA E DESIGN-------------------- -->
 
-        <div id="bootstrap-example-arquitetura" class="area-content" style="display: none;">
-            <div class="row">
-                <div class="col-sm-6 mb-3 mb-sm-0">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Superior de Tecnologia em Design de Interiores</h5>
-                            <p class="card-text">
-                                <img src="img/ferramenta-de-simbolo-de-interface-de-calendario.png" alt=""
-                                    class="icon-small">
-                                18 meses
-                                <img src="img/camera-de-video.png" alt="" class="icon-small">
-                                EaD Digital
-                            </p>
-                            <a href="#" class="btn btn-primary">Saiba mais</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 mb-3 mb-sm-0">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Arquitetura e Urbanismo</h5>
-                            <p class="card-text">
-                                <img src="img/ferramenta-de-simbolo-de-interface-de-calendario.png" alt=""
-                                    class="icon-small">
-                                48 meses
-                                <img src="img/camera-de-video.png" alt="" class="icon-small">
-                                EaD Digital
-                            </p>
-                            <a href="#" class="btn btn-primary">Saiba mais</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- --------------------CIÊNCIAS JURÍDICAS-------------------- -->
-
-        <div id="bootstrap-example-juridico" class="area-content" style="display: none;">
-            <div class="row">
-                <div class="col-sm-6 mb-3 mb-sm-0">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Superior de Tecnologia em Gestão de Serviços Jurídicos e
-                                Notariais</h5>
-                            <p class="card-text">
-                                <img src="img/ferramenta-de-simbolo-de-interface-de-calendario.png" alt=""
-                                    class="icon-small">
-                                18 meses
-                                <img src="img/camera-de-video.png" alt="" class="icon-small">
-                                Ead Digital
-                            </p>
-                            <a href="#" class="btn btn-primary">Saiba mais</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- --------------------CIÊNCIAS HUMANAS-------------------- -->
-        <div class="scollbar01">
-            <div id="bootstrap-example-humanas" class="area-content" style="display: none;">
+        <div class="teste11">
+            <div id="bootstrap-example-arquitetura" class="area-content" style="display: none;">
                 <div class="row">
                     <div class="col-sm-6 mb-3 mb-sm-0">
                         <div class="card">
                             <div class="card-body">
-                                <h5 class="card-title">Coach Digital</h5> <!--NÃO ENCONTREI-->
+                                <h5 class="card-title">Superior de Tecnologia em Design de Interiores</h5>
+                                <p class="card-text">
+                                    <img src="img/ferramenta-de-simbolo-de-interface-de-calendario.png" alt=""
+                                        class="icon-small">
+                                    18 meses
+                                    <img src="img/camera-de-video.png" alt="" class="icon-small">
+                                    EaD Digital
+                                </p>
+                                <a href="#" class="btn btn-primary">Saiba mais</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 mb-3 mb-sm-0">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Arquitetura e Urbanismo</h5>
                                 <p class="card-text">
                                     <img src="img/ferramenta-de-simbolo-de-interface-de-calendario.png" alt=""
                                         class="icon-small">
                                     48 meses
                                     <img src="img/camera-de-video.png" alt="" class="icon-small">
-                                    Ead Digital
+                                    EaD Digital
                                 </p>
                                 <a href="#" class="btn btn-primary">Saiba mais</a>
                             </div>
                         </div>
-                        <br>
                     </div>
+                </div>
+            </div>
 
+            <!-- --------------------CIÊNCIAS JURÍDICAS-------------------- -->
+
+            <div id="bootstrap-example-juridico" class="area-content" style="display: none;">
+                <div class="row">
                     <div class="col-sm-6 mb-3 mb-sm-0">
                         <div class="card">
                             <div class="card-body">
-                                <h5 class="card-title">Coach e Mentoring</h5> <!--NÃO ENCONTREI-->
-                                <p class="card-text">
-                                    <img src="img/ferramenta-de-simbolo-de-interface-de-calendario.png" alt=""
-                                        class="icon-small">
-                                    48 meses
-                                    <img src="img/camera-de-video.png" alt="" class="icon-small">
-                                    Ead Digital
-                                </p>
-                                <a href="#" class="btn btn-primary">Saiba mais</a>
-                            </div>
-                        </div>
-                        <br>
-                    </div>
-                    <div class="col-sm-6 mb-3 mb-sm-0">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Superior de Tecnologia em Gastronomia</h5>
-                                <p class="card-text">
-                                    <img src="img/ferramenta-de-simbolo-de-interface-de-calendario.png" alt=""
-                                        class="icon-small">
-                                    24 meses
-                                    <img src="img/camera-de-video.png" alt="" class="icon-small">
-                                    Ead Digital
-                                </p>
-                                <a href="#" class="btn btn-primary">Saiba mais</a>
-                            </div>
-                        </div>
-                        <br>
-                    </div>
-                    <div class="col-sm-6 mb-3 mb-sm-0">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Superior de Tecnologia em Gestão Ambiental</h5>
+                                <h5 class="card-title">Superior de Tecnologia em Gestão de Serviços Jurídicos e
+                                    Notariais</h5>
                                 <p class="card-text">
                                     <img src="img/ferramenta-de-simbolo-de-interface-de-calendario.png" alt=""
                                         class="icon-small">
@@ -159,1122 +251,1270 @@
                                 <a href="#" class="btn btn-primary">Saiba mais</a>
                             </div>
                         </div>
-                        <br>
                     </div>
-                    <div class="col-sm-6 mb-3 mb-sm-0">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Superior de Tecnologia em Segurança Pública</h5>
-                                <p class="card-text">
-                                    <img src="img/ferramenta-de-simbolo-de-interface-de-calendario.png" alt=""
-                                        class="icon-small">
-                                    18 meses
-                                    <img src="img/camera-de-video.png" alt="" class="icon-small">
-                                    Ead Digital
-                                </p>
-                                <a href="#" class="btn btn-primary">Saiba mais</a>
+                </div>
+            </div>
+
+            <!-- --------------------CIÊNCIAS HUMANAS-------------------- -->
+            <div class="scollbar01">
+                <div id="bootstrap-example-humanas" class="area-content" style="display: none;">
+                    <div class="row">
+                        <div class="col-sm-6 mb-3 mb-sm-0">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Coach Digital</h5> <!--NÃO ENCONTREI-->
+                                    <p class="card-text">
+                                        <img src="img/ferramenta-de-simbolo-de-interface-de-calendario.png" alt=""
+                                            class="icon-small">
+                                        48 meses
+                                        <img src="img/camera-de-video.png" alt="" class="icon-small">
+                                        Ead Digital
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Saiba mais</a>
+                                </div>
                             </div>
+                            <br>
                         </div>
-                        <br>
-                    </div>
-                    <div class="col-sm-6 mb-3 mb-sm-0">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Ciências Políticas</h5> <!--NÃO ENCONTREI-->
-                                <p class="card-text">
-                                    <img src="img/ferramenta-de-simbolo-de-interface-de-calendario.png" alt=""
-                                        class="icon-small">
-                                    48 meses
-                                    <img src="img/camera-de-video.png" alt="" class="icon-small">
-                                    Ead Digital
-                                </p>
-                                <a href="#" class="btn btn-primary">Saiba mais</a>
+
+                        <div class="col-sm-6 mb-3 mb-sm-0">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Coach e Mentoring</h5> <!--NÃO ENCONTREI-->
+                                    <p class="card-text">
+                                        <img src="img/ferramenta-de-simbolo-de-interface-de-calendario.png" alt=""
+                                            class="icon-small">
+                                        48 meses
+                                        <img src="img/camera-de-video.png" alt="" class="icon-small">
+                                        Ead Digital
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Saiba mais</a>
+                                </div>
                             </div>
+                            <br>
                         </div>
-                        <br>
-                    </div>
-                    <div class="col-sm-6 mb-3 mb-sm-0">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Serviço Social</h5>
-                                <p class="card-text">
-                                    <img src="img/ferramenta-de-simbolo-de-interface-de-calendario.png" alt=""
-                                        class="icon-small">
-                                    48 meses
-                                    <img src="img/camera-de-video.png" alt="" class="icon-small">
-                                    Ead Digital
-                                </p>
-                                <a href="#" class="btn btn-primary">Saiba mais</a>
+                        <div class="col-sm-6 mb-3 mb-sm-0">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Superior de Tecnologia em Gastronomia</h5>
+                                    <p class="card-text">
+                                        <img src="img/ferramenta-de-simbolo-de-interface-de-calendario.png" alt=""
+                                            class="icon-small">
+                                        24 meses
+                                        <img src="img/camera-de-video.png" alt="" class="icon-small">
+                                        Ead Digital
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Saiba mais</a>
+                                </div>
                             </div>
+                            <br>
                         </div>
-                        <br>
-                    </div>
-                    <div class="col-sm-6 mb-3 mb-sm-0">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Teologia</h5>
-                                <p class="card-text">
-                                    <img src="img/ferramenta-de-simbolo-de-interface-de-calendario.png" alt=""
-                                        class="icon-small">
-                                    30 meses
-                                    <img src="img/camera-de-video.png" alt="" class="icon-small">
-                                    Ead Digital
-                                </p>
-                                <a href="#" class="btn btn-primary">Saiba mais</a>
+                        <div class="col-sm-6 mb-3 mb-sm-0">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Superior de Tecnologia em Gestão Ambiental</h5>
+                                    <p class="card-text">
+                                        <img src="img/ferramenta-de-simbolo-de-interface-de-calendario.png" alt=""
+                                            class="icon-small">
+                                        18 meses
+                                        <img src="img/camera-de-video.png" alt="" class="icon-small">
+                                        Ead Digital
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Saiba mais</a>
+                                </div>
                             </div>
+                            <br>
                         </div>
-                        <br>
+                        <div class="col-sm-6 mb-3 mb-sm-0">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Superior de Tecnologia em Segurança Pública</h5>
+                                    <p class="card-text">
+                                        <img src="img/ferramenta-de-simbolo-de-interface-de-calendario.png" alt=""
+                                            class="icon-small">
+                                        18 meses
+                                        <img src="img/camera-de-video.png" alt="" class="icon-small">
+                                        Ead Digital
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Saiba mais</a>
+                                </div>
+                            </div>
+                            <br>
+                        </div>
+                        <div class="col-sm-6 mb-3 mb-sm-0">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Ciências Políticas</h5> <!--NÃO ENCONTREI-->
+                                    <p class="card-text">
+                                        <img src="img/ferramenta-de-simbolo-de-interface-de-calendario.png" alt=""
+                                            class="icon-small">
+                                        48 meses
+                                        <img src="img/camera-de-video.png" alt="" class="icon-small">
+                                        Ead Digital
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Saiba mais</a>
+                                </div>
+                            </div>
+                            <br>
+                        </div>
+                        <div class="col-sm-6 mb-3 mb-sm-0">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Serviço Social</h5>
+                                    <p class="card-text">
+                                        <img src="img/ferramenta-de-simbolo-de-interface-de-calendario.png" alt=""
+                                            class="icon-small">
+                                        48 meses
+                                        <img src="img/camera-de-video.png" alt="" class="icon-small">
+                                        Ead Digital
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Saiba mais</a>
+                                </div>
+                            </div>
+                            <br>
+                        </div>
+                        <div class="col-sm-6 mb-3 mb-sm-0">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Teologia</h5>
+                                    <p class="card-text">
+                                        <img src="img/ferramenta-de-simbolo-de-interface-de-calendario.png" alt=""
+                                            class="icon-small">
+                                        30 meses
+                                        <img src="img/camera-de-video.png" alt="" class="icon-small">
+                                        Ead Digital
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Saiba mais</a>
+                                </div>
+                            </div>
+                            <br>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <!-- --------------------EDUCAÇÃO-------------------- -->
+            <!-- --------------------EDUCAÇÃO-------------------- -->
 
-        <div id="bootstrap-example-educacao" class="area-content" style="display: none;">
-            <div class="row">
-                <div class="col-sm-6 mb-3 mb-sm-0">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">CST em Futebol</h5> <!--NÃO ENCONTREI-->
-                            <p class="card-text">
-                                <img src="img/ferramenta-de-simbolo-de-interface-de-calendario.png" alt=""
-                                    class="icon-small">
-                                48 meses
-                                <img src="img/camera-de-video.png" alt="" class="icon-small">
-                                Ead Digital
-                            </p>
-                            <a href="#" class="btn btn-primary">Saiba mais</a>
+            <div class="scollbar">
+                <div id="bootstrap-example-educacao" class="area-content" style="display: none;">
+                    <div class="row">
+                        <div class="col-sm-6 mb-3 mb-sm-0">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">CST em Futebol</h5> <!--NÃO ENCONTREI-->
+                                    <p class="card-text">
+                                        <img src="img/ferramenta-de-simbolo-de-interface-de-calendario.png" alt=""
+                                            class="icon-small">
+                                        48 meses
+                                        <img src="img/camera-de-video.png" alt="" class="icon-small">
+                                        Ead Digital
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Saiba mais</a>
+                                </div>
+                            </div>
+                            <br>
+                        </div>
+                        <div class="col-sm-6 mb-3 mb-sm-0">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Educação Física - Bacharelado</h5>
+                                    <p class="card-text">
+                                        <img src="img/ferramenta-de-simbolo-de-interface-de-calendario.png" alt=""
+                                            class="icon-small">
+                                        48 meses
+                                        <img src="img/camera-de-video.png" alt="" class="icon-small">
+                                        Ead Digital
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Saiba mais</a>
+                                </div>
+                            </div>
+                            <br>
+                        </div>
+                        <div class="col-sm-6 mb-3 mb-sm-0">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Educação Física - Licenciatura</h5>
+                                    <p class="card-text">
+                                        <img src="img/ferramenta-de-simbolo-de-interface-de-calendario.png" alt=""
+                                            class="icon-small">
+                                        48 meses
+                                        <img src="img/camera-de-video.png" alt="" class="icon-small">
+                                        Ead Digital
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Saiba mais</a>
+                                </div>
+                            </div>
+                            <br>
+                        </div>
+                        <div class="col-sm-6 mb-3 mb-sm-0">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Ciências Biológicas - Licenciatura</h5>
+                                    <p class="card-text">
+                                        <img src="img/ferramenta-de-simbolo-de-interface-de-calendario.png" alt=""
+                                            class="icon-small">
+                                        48 meses
+                                        <img src="img/camera-de-video.png" alt="" class="icon-small">
+                                        Ead Digital
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Saiba mais</a>
+                                </div>
+                            </div>
+                            <br>
+                        </div>
+                        <div class="col-sm-6 mb-3 mb-sm-0">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Letras - Espanhol</h5>
+                                    <p class="card-text">
+                                        <img src="img/ferramenta-de-simbolo-de-interface-de-calendario.png" alt=""
+                                            class="icon-small">
+                                        42 meses
+                                        <img src="img/camera-de-video.png" alt="" class="icon-small">
+                                        Ead Digital
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Saiba mais</a>
+                                </div>
+                            </div>
+                            <br>
+                        </div>
+                        <div class="col-sm-6 mb-3 mb-sm-0">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Letras - Inglês</h5>
+                                    <p class="card-text">
+                                        <img src="img/ferramenta-de-simbolo-de-interface-de-calendario.png" alt=""
+                                            class="icon-small">
+                                        42 meses
+                                        <img src="img/camera-de-video.png" alt="" class="icon-small">
+                                        Ead Digital
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Saiba mais</a>
+                                </div>
+                            </div>
+                            <br>
+                        </div>
+                        <div class="col-sm-6 mb-3 mb-sm-0">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Letras - Português</h5>
+                                    <p class="card-text">
+                                        <img src="img/ferramenta-de-simbolo-de-interface-de-calendario.png" alt=""
+                                            class="icon-small">
+                                        42 meses
+                                        <img src="img/camera-de-video.png" alt="" class="icon-small">
+                                        Ead Digital
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Saiba mais</a>
+                                </div>
+                            </div>
+                            <br>
+                        </div>
+                        <div class="col-sm-6 mb-3 mb-sm-0">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Pedagogia</h5>
+                                    <p class="card-text">
+                                        <img src="img/ferramenta-de-simbolo-de-interface-de-calendario.png" alt=""
+                                            class="icon-small">
+                                        42 meses
+                                        <img src="img/camera-de-video.png" alt="" class="icon-small">
+                                        Ead Digital
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Saiba mais</a>
+                                </div>
+                            </div>
+                            <br>
+                        </div>
+                        <div class="col-sm-6 mb-3 mb-sm-0">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Geografia</h5>
+                                    <p class="card-text">
+                                        <img src="img/ferramenta-de-simbolo-de-interface-de-calendario.png" alt=""
+                                            class="icon-small">
+                                        42 meses
+                                        <img src="img/camera-de-video.png" alt="" class="icon-small">
+                                        Ead Digital
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Saiba mais</a>
+                                </div>
+                            </div>
+                            <br>
+                        </div>
+                        <div class="col-sm-6 mb-3 mb-sm-0">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">História</h5>
+                                    <p class="card-text">
+                                        <img src="img/ferramenta-de-simbolo-de-interface-de-calendario.png" alt=""
+                                            class="icon-small">
+                                        42 meses
+                                        <img src="img/camera-de-video.png" alt="" class="icon-small">
+                                        Ead Digital
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Saiba mais</a>
+                                </div>
+                            </div>
+                            <br>
+                        </div>
+                        <div class="col-sm-6 mb-3 mb-sm-0">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Matemática</h5>
+                                    <p class="card-text">
+                                        <img src="img/ferramenta-de-simbolo-de-interface-de-calendario.png" alt=""
+                                            class="icon-small">
+                                        42 meses
+                                        <img src="img/camera-de-video.png" alt="" class="icon-small">
+                                        Ead Digital
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Saiba mais</a>
+                                </div>
+                            </div>
+                            <br>
+                        </div>
+                        <div class="col-sm-6 mb-3 mb-sm-0">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Educação Especial - Licenciatura</h5>
+                                    <p class="card-text">
+                                        <img src="img/ferramenta-de-simbolo-de-interface-de-calendario.png" alt=""
+                                            class="icon-small">
+                                        42 meses
+                                        <img src="img/camera-de-video.png" alt="" class="icon-small">
+                                        Ead Digital
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Saiba mais</a>
+                                </div>
+                            </div>
+                            <br>
+                        </div>
+                        <div class="col-sm-6 mb-3 mb-sm-0">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Licenciatura Pedagogia</h5> <!--NÃO ENCONTREI-->
+                                    <p class="card-text">
+                                        <img src="img/ferramenta-de-simbolo-de-interface-de-calendario.png" alt=""
+                                            class="icon-small">
+                                        48 meses
+                                        <img src="img/camera-de-video.png" alt="" class="icon-small">
+                                        Ead Digital
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Saiba mais</a>
+                                </div>
+                            </div>
+                            <br>
+                        </div>
+                        <div class="col-sm-6 mb-3 mb-sm-0">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Licenciatura Letras - Inglês</h5> <!--NÃO ENCONTREI-->
+                                    <p class="card-text">
+                                        <img src="img/ferramenta-de-simbolo-de-interface-de-calendario.png" alt=""
+                                            class="icon-small">
+                                        48 meses
+                                        <img src="img/camera-de-video.png" alt="" class="icon-small">
+                                        Ead Digital
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Saiba mais</a>
+                                </div>
+                            </div>
+                            <br>
+                        </div>
+                        <div class="col-sm-6 mb-3 mb-sm-0">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Licenciatura Letras - Português</h5> <!--NÃO ENCONTREI-->
+                                    <p class="card-text">
+                                        <img src="img/ferramenta-de-simbolo-de-interface-de-calendario.png" alt=""
+                                            class="icon-small">
+                                        48 meses
+                                        <img src="img/camera-de-video.png" alt="" class="icon-small">
+                                        Ead Digital
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Saiba mais</a>
+                                </div>
+                            </div>
+                            <br>
+                        </div>
+                        <div class="col-sm-6 mb-3 mb-sm-0">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Licenciatura em Geografia</h5> <!--NÃO ENCONTREI-->
+                                    <p class="card-text">
+                                        <img src="img/ferramenta-de-simbolo-de-interface-de-calendario.png" alt=""
+                                            class="icon-small">
+                                        48 meses
+                                        <img src="img/camera-de-video.png" alt="" class="icon-small">
+                                        Ead Digital
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Saiba mais</a>
+                                </div>
+                            </div>
+                            <br>
+                        </div>
+                        <div class="col-sm-6 mb-3 mb-sm-0">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Licenciatura em Matemática</h5> <!--NÃO ENCONTREI-->
+                                    <p class="card-text">
+                                        <img src="img/ferramenta-de-simbolo-de-interface-de-calendario.png" alt=""
+                                            class="icon-small">
+                                        48 meses
+                                        <img src="img/camera-de-video.png" alt="" class="icon-small">
+                                        Ead Digital
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Saiba mais</a>
+                                </div>
+                            </div>
+                            <br>
+                        </div>
+                        <div class="col-sm-6 mb-3 mb-sm-0">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Licenciatura em História</h5>
+                                    <p class="card-text">
+                                        <img src="img/ferramenta-de-simbolo-de-interface-de-calendario.png" alt=""
+                                            class="icon-small">
+                                        48 meses
+                                        <img src="img/camera-de-video.png" alt="" class="icon-small">
+                                        Ead Digital
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Saiba mais</a>
+                                </div>
+                            </div>
+                            <br>
+                        </div>
+                        <div class="col-sm-6 mb-3 mb-sm-0">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Formac. Pedag. Pedagogia</h5> <!--NÃO ENCONTREI-->
+                                    <p class="card-text">
+                                        <img src="img/ferramenta-de-simbolo-de-interface-de-calendario.png" alt=""
+                                            class="icon-small">
+                                        48 meses
+                                        <img src="img/camera-de-video.png" alt="" class="icon-small">
+                                        Ead Digital
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Saiba mais</a>
+                                </div>
+                            </div>
+                            <br>
+                        </div>
+                        <div class="col-sm-6 mb-3 mb-sm-0">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Formac. Pedag Matemática</h5>
+                                    <p class="card-text">
+                                        <img src="img/ferramenta-de-simbolo-de-interface-de-calendario.png" alt=""
+                                            class="icon-small">
+                                        48 meses
+                                        <img src="img/camera-de-video.png" alt="" class="icon-small">
+                                        Ead Digital
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Saiba mais</a>
+                                </div>
+                            </div>
+                            <br>
+                        </div>
+                        <div class="col-sm-6 mb-3 mb-sm-0">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Licenciatura Letras - Lspanhol</h5>
+                                    <p class="card-text">
+                                        <img src="img/ferramenta-de-simbolo-de-interface-de-calendario.png" alt=""
+                                            class="icon-small">
+                                        48 meses
+                                        <img src="img/camera-de-video.png" alt="" class="icon-small">
+                                        Ead Digital
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Saiba mais</a>
+                                </div>
+                            </div>
+                            <br>
                         </div>
                     </div>
-                    <br>
-                </div>
-                <div class="col-sm-6 mb-3 mb-sm-0">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Educação Física - Bacharelado</h5>
-                            <p class="card-text">
-                                <img src="img/ferramenta-de-simbolo-de-interface-de-calendario.png" alt=""
-                                    class="icon-small">
-                                48 meses
-                                <img src="img/camera-de-video.png" alt="" class="icon-small">
-                                Ead Digital
-                            </p>
-                            <a href="#" class="btn btn-primary">Saiba mais</a>
-                        </div>
-                    </div>
-                    <br>
-                </div>
-                <div class="col-sm-6 mb-3 mb-sm-0">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Educação Física - Licenciatura</h5>
-                            <p class="card-text">
-                                <img src="img/ferramenta-de-simbolo-de-interface-de-calendario.png" alt=""
-                                    class="icon-small">
-                                48 meses
-                                <img src="img/camera-de-video.png" alt="" class="icon-small">
-                                Ead Digital
-                            </p>
-                            <a href="#" class="btn btn-primary">Saiba mais</a>
-                        </div>
-                    </div>
-                    <br>
-                </div>
-                <div class="col-sm-6 mb-3 mb-sm-0">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Ciências Biológicas - Licenciatura</h5>
-                            <p class="card-text">
-                                <img src="img/ferramenta-de-simbolo-de-interface-de-calendario.png" alt=""
-                                    class="icon-small">
-                                48 meses
-                                <img src="img/camera-de-video.png" alt="" class="icon-small">
-                                Ead Digital
-                            </p>
-                            <a href="#" class="btn btn-primary">Saiba mais</a>
-                        </div>
-                    </div>
-                    <br>
-                </div>
-                <div class="col-sm-6 mb-3 mb-sm-0">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Letras - Espanhol</h5>
-                            <p class="card-text">
-                                <img src="img/ferramenta-de-simbolo-de-interface-de-calendario.png" alt=""
-                                    class="icon-small">
-                                42 meses
-                                <img src="img/camera-de-video.png" alt="" class="icon-small">
-                                Ead Digital
-                            </p>
-                            <a href="#" class="btn btn-primary">Saiba mais</a>
-                        </div>
-                    </div>
-                    <br>
-                </div>
-                <div class="col-sm-6 mb-3 mb-sm-0">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Letras - Inglês</h5>
-                            <p class="card-text">
-                                <img src="img/ferramenta-de-simbolo-de-interface-de-calendario.png" alt=""
-                                    class="icon-small">
-                                42 meses
-                                <img src="img/camera-de-video.png" alt="" class="icon-small">
-                                Ead Digital
-                            </p>
-                            <a href="#" class="btn btn-primary">Saiba mais</a>
-                        </div>
-                    </div>
-                    <br>
-                </div>
-                <div class="col-sm-6 mb-3 mb-sm-0">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Letras - Português</h5>
-                            <p class="card-text">
-                                <img src="img/ferramenta-de-simbolo-de-interface-de-calendario.png" alt=""
-                                    class="icon-small">
-                                42 meses
-                                <img src="img/camera-de-video.png" alt="" class="icon-small">
-                                Ead Digital
-                            </p>
-                            <a href="#" class="btn btn-primary">Saiba mais</a>
-                        </div>
-                    </div>
-                    <br>
-                </div>
-                <div class="col-sm-6 mb-3 mb-sm-0">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Pedagogia</h5>
-                            <p class="card-text">
-                                <img src="img/ferramenta-de-simbolo-de-interface-de-calendario.png" alt=""
-                                    class="icon-small">
-                                42 meses
-                                <img src="img/camera-de-video.png" alt="" class="icon-small">
-                                Ead Digital
-                            </p>
-                            <a href="#" class="btn btn-primary">Saiba mais</a>
-                        </div>
-                    </div>
-                    <br>
-                </div>
-                <div class="col-sm-6 mb-3 mb-sm-0">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Geografia</h5>
-                            <p class="card-text">
-                                <img src="img/ferramenta-de-simbolo-de-interface-de-calendario.png" alt=""
-                                    class="icon-small">
-                                42 meses
-                                <img src="img/camera-de-video.png" alt="" class="icon-small">
-                                Ead Digital
-                            </p>
-                            <a href="#" class="btn btn-primary">Saiba mais</a>
-                        </div>
-                    </div>
-                    <br>
-                </div>
-                <div class="col-sm-6 mb-3 mb-sm-0">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">História</h5>
-                            <p class="card-text">
-                                <img src="img/ferramenta-de-simbolo-de-interface-de-calendario.png" alt=""
-                                    class="icon-small">
-                                42 meses
-                                <img src="img/camera-de-video.png" alt="" class="icon-small">
-                                Ead Digital
-                            </p>
-                            <a href="#" class="btn btn-primary">Saiba mais</a>
-                        </div>
-                    </div>
-                    <br>
-                </div>
-                <div class="col-sm-6 mb-3 mb-sm-0">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Matemática</h5>
-                            <p class="card-text">
-                                <img src="img/ferramenta-de-simbolo-de-interface-de-calendario.png" alt=""
-                                    class="icon-small">
-                                42 meses
-                                <img src="img/camera-de-video.png" alt="" class="icon-small">
-                                Ead Digital
-                            </p>
-                            <a href="#" class="btn btn-primary">Saiba mais</a>
-                        </div>
-                    </div>
-                    <br>
-                </div>
-                <div class="col-sm-6 mb-3 mb-sm-0">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Educação Especial - Licenciatura</h5>
-                            <p class="card-text">
-                                <img src="img/ferramenta-de-simbolo-de-interface-de-calendario.png" alt=""
-                                    class="icon-small">
-                                42 meses
-                                <img src="img/camera-de-video.png" alt="" class="icon-small">
-                                Ead Digital
-                            </p>
-                            <a href="#" class="btn btn-primary">Saiba mais</a>
-                        </div>
-                    </div>
-                    <br>
-                </div>
-                <div class="col-sm-6 mb-3 mb-sm-0">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Licenciatura Pedagogia</h5> <!--NÃO ENCONTREI-->
-                            <p class="card-text">
-                                <img src="img/ferramenta-de-simbolo-de-interface-de-calendario.png" alt=""
-                                    class="icon-small">
-                                48 meses
-                                <img src="img/camera-de-video.png" alt="" class="icon-small">
-                                Ead Digital
-                            </p>
-                            <a href="#" class="btn btn-primary">Saiba mais</a>
-                        </div>
-                    </div>
-                    <br>
-                </div>
-                <div class="col-sm-6 mb-3 mb-sm-0">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Licenciatura Letras - Inglês</h5> <!--NÃO ENCONTREI-->
-                            <p class="card-text">
-                                <img src="img/ferramenta-de-simbolo-de-interface-de-calendario.png" alt=""
-                                    class="icon-small">
-                                48 meses
-                                <img src="img/camera-de-video.png" alt="" class="icon-small">
-                                Ead Digital
-                            </p>
-                            <a href="#" class="btn btn-primary">Saiba mais</a>
-                        </div>
-                    </div>
-                    <br>
-                </div>
-                <div class="col-sm-6 mb-3 mb-sm-0">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Licenciatura Letras - Português</h5> <!--NÃO ENCONTREI-->
-                            <p class="card-text">
-                                <img src="img/ferramenta-de-simbolo-de-interface-de-calendario.png" alt=""
-                                    class="icon-small">
-                                48 meses
-                                <img src="img/camera-de-video.png" alt="" class="icon-small">
-                                Ead Digital
-                            </p>
-                            <a href="#" class="btn btn-primary">Saiba mais</a>
-                        </div>
-                    </div>
-                    <br>
-                </div>
-                <div class="col-sm-6 mb-3 mb-sm-0">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Licenciatura em Geografia</h5> <!--NÃO ENCONTREI-->
-                            <p class="card-text">
-                                <img src="img/ferramenta-de-simbolo-de-interface-de-calendario.png" alt=""
-                                    class="icon-small">
-                                48 meses
-                                <img src="img/camera-de-video.png" alt="" class="icon-small">
-                                Ead Digital
-                            </p>
-                            <a href="#" class="btn btn-primary">Saiba mais</a>
-                        </div>
-                    </div>
-                    <br>
-                </div>
-                <div class="col-sm-6 mb-3 mb-sm-0">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Licenciatura em Matemática</h5> <!--NÃO ENCONTREI-->
-                            <p class="card-text">
-                                <img src="img/ferramenta-de-simbolo-de-interface-de-calendario.png" alt=""
-                                    class="icon-small">
-                                48 meses
-                                <img src="img/camera-de-video.png" alt="" class="icon-small">
-                                Ead Digital
-                            </p>
-                            <a href="#" class="btn btn-primary">Saiba mais</a>
-                        </div>
-                    </div>
-                    <br>
-                </div>
-                <div class="col-sm-6 mb-3 mb-sm-0">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Licenciatura em História</h5>
-                            <p class="card-text">
-                                <img src="img/ferramenta-de-simbolo-de-interface-de-calendario.png" alt=""
-                                    class="icon-small">
-                                48 meses
-                                <img src="img/camera-de-video.png" alt="" class="icon-small">
-                                Ead Digital
-                            </p>
-                            <a href="#" class="btn btn-primary">Saiba mais</a>
-                        </div>
-                    </div>
-                    <br>
-                </div>
-                <div class="col-sm-6 mb-3 mb-sm-0">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Formac. Pedag. Pedagogia</h5> <!--NÃO ENCONTREI-->
-                            <p class="card-text">
-                                <img src="img/ferramenta-de-simbolo-de-interface-de-calendario.png" alt=""
-                                    class="icon-small">
-                                48 meses
-                                <img src="img/camera-de-video.png" alt="" class="icon-small">
-                                Ead Digital
-                            </p>
-                            <a href="#" class="btn btn-primary">Saiba mais</a>
-                        </div>
-                    </div>
-                    <br>
-                </div>
-                <div class="col-sm-6 mb-3 mb-sm-0">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Formac. Pedag Matemática</h5>
-                            <p class="card-text">
-                                <img src="img/ferramenta-de-simbolo-de-interface-de-calendario.png" alt=""
-                                    class="icon-small">
-                                48 meses
-                                <img src="img/camera-de-video.png" alt="" class="icon-small">
-                                Ead Digital
-                            </p>
-                            <a href="#" class="btn btn-primary">Saiba mais</a>
-                        </div>
-                    </div>
-                    <br>
-                </div>
-                <div class="col-sm-6 mb-3 mb-sm-0">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Licenciatura Letras - Lspanhol</h5>
-                            <p class="card-text">
-                                <img src="img/ferramenta-de-simbolo-de-interface-de-calendario.png" alt=""
-                                    class="icon-small">
-                                48 meses
-                                <img src="img/camera-de-video.png" alt="" class="icon-small">
-                                Ead Digital
-                            </p>
-                            <a href="#" class="btn btn-primary">Saiba mais</a>
-                        </div>
-                    </div>
-                    <br>
                 </div>
             </div>
-        </div>
 
+            <!-- ----------------ENGENAHRIA-------------------- -->
 
-        <!-- ----------------ENGENAHRIA-------------------- -->
-
-        <div id="bootstrap-example-engenharia" class="area-content" style="display: none;">
-            <div class="row">
-                <div class="col-sm-6 mb-3 mb-sm-0">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Engenharia Civil</h5>
-                            <p class="card-text">
-                                <img src="img/ferramenta-de-simbolo-de-interface-de-calendario.png" alt=""
-                                    class="icon-small">
-                                48 meses
-                                <img src="img/camera-de-video.png" alt="" class="icon-small">
-                                Ead Digital
-                            </p>
-                            <a href="#" class="btn btn-primary">Saiba mais</a>
+            <div class="engenharia">
+                <div id="bootstrap-example-engenharia" class="area-content" style="display: none;">
+                    <div class="row">
+                        <div class="col-sm-6 mb-3 mb-sm-0">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Engenharia Civil</h5>
+                                    <p class="card-text">
+                                        <img src="img/ferramenta-de-simbolo-de-interface-de-calendario.png" alt=""
+                                            class="icon-small">
+                                        48 meses
+                                        <img src="img/camera-de-video.png" alt="" class="icon-small">
+                                        Ead Digital
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Saiba mais</a>
+                                </div>
+                            </div>
+                            <br>
+                        </div>
+                        <div class="col-sm-6 mb-3 mb-sm-0">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Engenharia Elétrica</h5>
+                                    <p class="card-text">
+                                        <img src="img/ferramenta-de-simbolo-de-interface-de-calendario.png" alt=""
+                                            class="icon-small">
+                                        48 meses
+                                        <img src="img/camera-de-video.png" alt="" class="icon-small">
+                                        Ead Digital
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Saiba mais</a>
+                                </div>
+                            </div>
+                            <br>
+                        </div>
+                        <div class="col-sm-6 mb-3 mb-sm-0">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Engenharia Mecânica</h5>
+                                    <p class="card-text">
+                                        <img src="img/ferramenta-de-simbolo-de-interface-de-calendario.png" alt=""
+                                            class="icon-small">
+                                        48 meses
+                                        <img src="img/camera-de-video.png" alt="" class="icon-small">
+                                        Ead Digital
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Saiba mais</a>
+                                </div>
+                            </div>
+                            <br>
+                        </div>
+                        <div class="col-sm-6 mb-3 mb-sm-0">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Engenharia de Produção</h5>
+                                    <p class="card-text">
+                                        <img src="img/ferramenta-de-simbolo-de-interface-de-calendario.png" alt=""
+                                            class="icon-small">
+                                        48 meses
+                                        <img src="img/camera-de-video.png" alt="" class="icon-small">
+                                        Ead Digital
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Saiba mais</a>
+                                </div>
+                            </div>
+                            <br>
                         </div>
                     </div>
-                    <br>
-                </div>
-                <div class="col-sm-6 mb-3 mb-sm-0">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Engenharia Elétrica</h5>
-                            <p class="card-text">
-                                <img src="img/ferramenta-de-simbolo-de-interface-de-calendario.png" alt=""
-                                    class="icon-small">
-                                48 meses
-                                <img src="img/camera-de-video.png" alt="" class="icon-small">
-                                Ead Digital
-                            </p>
-                            <a href="#" class="btn btn-primary">Saiba mais</a>
-                        </div>
-                    </div>
-                    <br>
-                </div>
-                <div class="col-sm-6 mb-3 mb-sm-0">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Engenharia Mecânica</h5>
-                            <p class="card-text">
-                                <img src="img/ferramenta-de-simbolo-de-interface-de-calendario.png" alt=""
-                                    class="icon-small">
-                                48 meses
-                                <img src="img/camera-de-video.png" alt="" class="icon-small">
-                                Ead Digital
-                            </p>
-                            <a href="#" class="btn btn-primary">Saiba mais</a>
-                        </div>
-                    </div>
-                    <br>
-                </div>
-                <div class="col-sm-6 mb-3 mb-sm-0">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Engenharia de Produção</h5>
-                            <p class="card-text">
-                                <img src="img/ferramenta-de-simbolo-de-interface-de-calendario.png" alt=""
-                                    class="icon-small">
-                                48 meses
-                                <img src="img/camera-de-video.png" alt="" class="icon-small">
-                                Ead Digital
-                            </p>
-                            <a href="#" class="btn btn-primary">Saiba mais</a>
-                        </div>
-                    </div>
-                    <br>
                 </div>
             </div>
-        </div>
 
-        <!-- ----------------NEGÓCIOS-------------------- -->
+            <!-- ----------------NEGÓCIOS-------------------- -->
 
-        <div id="bootstrap-example-negocios" class="area-content" style="display: none;">
-            <div class="row">
-                <div class="col-sm-6 mb-3 mb-sm-0">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">E-Commerce</h5>
-                            <p class="card-text">
-                                <img src="img/ferramenta-de-simbolo-de-interface-de-calendario.png" alt=""
-                                    class="icon-small">
-                                48 meses
-                                <img src="img/camera-de-video.png" alt="" class="icon-small">
-                                Ead Digital
-                            </p>
-                            <a href="#" class="btn btn-primary">Saiba mais</a>
+            <div class="negocios">
+                <div id="bootstrap-example-negocios" class="area-content" style="display: none;">
+                    <div class="row">
+                        <div class="col-sm-6 mb-3 mb-sm-0">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">E-Commerce</h5>
+                                    <p class="card-text">
+                                        <img src="img/ferramenta-de-simbolo-de-interface-de-calendario.png" alt=""
+                                            class="icon-small">
+                                        48 meses
+                                        <img src="img/camera-de-video.png" alt="" class="icon-small">
+                                        Ead Digital
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Saiba mais</a>
+                                </div>
+                            </div>
+                            <br>
+                        </div>
+                        <div class="col-sm-6 mb-3 mb-sm-0">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Empreendedorismo Digital</h5>
+                                    <p class="card-text">
+                                        <img src="img/ferramenta-de-simbolo-de-interface-de-calendario.png" alt=""
+                                            class="icon-small">
+                                        48 meses
+                                        <img src="img/camera-de-video.png" alt="" class="icon-small">
+                                        Ead Digital
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Saiba mais</a>
+                                </div>
+                            </div>
+                            <br>
+                        </div>
+                        <div class="col-sm-6 mb-3 mb-sm-0">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Gestão Comercial</h5>
+                                    <p class="card-text">
+                                        <img src="img/ferramenta-de-simbolo-de-interface-de-calendario.png" alt=""
+                                            class="icon-small">
+                                        48 meses
+                                        <img src="img/camera-de-video.png" alt="" class="icon-small">
+                                        Ead Digital
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Saiba mais</a>
+                                </div>
+                            </div>
+                            <br>
+                        </div>
+                        <div class="col-sm-6 mb-3 mb-sm-0">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Gestão da Qualidade</h5>
+                                    <p class="card-text">
+                                        <img src="img/ferramenta-de-simbolo-de-interface-de-calendario.png" alt=""
+                                            class="icon-small">
+                                        48 meses
+                                        <img src="img/camera-de-video.png" alt="" class="icon-small">
+                                        Ead Digital
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Saiba mais</a>
+                                </div>
+                            </div>
+                            <br>
+                        </div>
+                        <div class="col-sm-6 mb-3 mb-sm-0">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Gestão de Recursos Humanos</h5>
+                                    <p class="card-text">
+                                        <img src="img/ferramenta-de-simbolo-de-interface-de-calendario.png" alt=""
+                                            class="icon-small">
+                                        48 meses
+                                        <img src="img/camera-de-video.png" alt="" class="icon-small">
+                                        Ead Digital
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Saiba mais</a>
+                                </div>
+                            </div>
+                            <br>
+                        </div>
+                        <div class="col-sm-6 mb-3 mb-sm-0">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Gestão Financeira</h5>
+                                    <p class="card-text">
+                                        <img src="img/ferramenta-de-simbolo-de-interface-de-calendario.png" alt=""
+                                            class="icon-small">
+                                        48 meses
+                                        <img src="img/camera-de-video.png" alt="" class="icon-small">
+                                        Ead Digital
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Saiba mais</a>
+                                </div>
+                            </div>
+                            <br>
+                        </div>
+                        <div class="col-sm-6 mb-3 mb-sm-0">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Gestão Pública</h5>
+                                    <p class="card-text">
+                                        <img src="img/ferramenta-de-simbolo-de-interface-de-calendario.png" alt=""
+                                            class="icon-small">
+                                        48 meses
+                                        <img src="img/camera-de-video.png" alt="" class="icon-small">
+                                        Ead Digital
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Saiba mais</a>
+                                </div>
+                            </div>
+                            <br>
+                        </div>
+                        <div class="col-sm-6 mb-3 mb-sm-0">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Logística</h5>
+                                    <p class="card-text">
+                                        <img src="img/ferramenta-de-simbolo-de-interface-de-calendario.png" alt=""
+                                            class="icon-small">
+                                        48 meses
+                                        <img src="img/camera-de-video.png" alt="" class="icon-small">
+                                        Ead Digital
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Saiba mais</a>
+                                </div>
+                            </div>
+                            <br>
+                        </div>
+                        <div class="col-sm-6 mb-3 mb-sm-0">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Marketing</h5>
+                                    <p class="card-text">
+                                        <img src="img/ferramenta-de-simbolo-de-interface-de-calendario.png" alt=""
+                                            class="icon-small">
+                                        48 meses
+                                        <img src="img/camera-de-video.png" alt="" class="icon-small">
+                                        Ead Digital
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Saiba mais</a>
+                                </div>
+                            </div>
+                            <br>
+                        </div>
+                        <div class="col-sm-6 mb-3 mb-sm-0">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Gestão de Trânsito</h5>
+                                    <p class="card-text">
+                                        <img src="img/ferramenta-de-simbolo-de-interface-de-calendario.png" alt=""
+                                            class="icon-small">
+                                        48 meses
+                                        <img src="img/camera-de-video.png" alt="" class="icon-small">
+                                        Ead Digital
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Saiba mais</a>
+                                </div>
+                            </div>
+                            <br>
+                        </div>
+                        <div class="col-sm-6 mb-3 mb-sm-0">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Processos Gerenciais</h5>
+                                    <p class="card-text">
+                                        <img src="img/ferramenta-de-simbolo-de-interface-de-calendario.png" alt=""
+                                            class="icon-small">
+                                        48 meses
+                                        <img src="img/camera-de-video.png" alt="" class="icon-small">
+                                        Ead Digital
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Saiba mais</a>
+                                </div>
+                            </div>
+                            <br>
+                        </div>
+                        <div class="col-sm-6 mb-3 mb-sm-0">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Administração</h5>
+                                    <p class="card-text">
+                                        <img src="img/ferramenta-de-simbolo-de-interface-de-calendario.png" alt=""
+                                            class="icon-small">
+                                        48 meses
+                                        <img src="img/camera-de-video.png" alt="" class="icon-small">
+                                        Ead Digital
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Saiba mais</a>
+                                </div>
+                            </div>
+                            <br>
+                        </div>
+                        <div class="col-sm-6 mb-3 mb-sm-0">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Ciências Contábeis</h5>
+                                    <p class="card-text">
+                                        <img src="img/ferramenta-de-simbolo-de-interface-de-calendario.png" alt=""
+                                            class="icon-small">
+                                        48 meses
+                                        <img src="img/camera-de-video.png" alt="" class="icon-small">
+                                        Ead Digital
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Saiba mais</a>
+                                </div>
+                            </div>
+                            <br>
+                        </div>
+                        <div class="col-sm-6 mb-3 mb-sm-0">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Ciências Econômicas</h5>
+                                    <p class="card-text">
+                                        <img src="img/ferramenta-de-simbolo-de-interface-de-calendario.png" alt=""
+                                            class="icon-small">
+                                        48 meses
+                                        <img src="img/camera-de-video.png" alt="" class="icon-small">
+                                        Ead Digital
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Saiba mais</a>
+                                </div>
+                            </div>
+                            <br>
+                        </div>
+                        <div class="col-sm-6 mb-3 mb-sm-0">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Superior de Tecnologia em Negócios Imobiliários</h5>
+                                    <p class="card-text">
+                                        <img src="img/ferramenta-de-simbolo-de-interface-de-calendario.png" alt=""
+                                            class="icon-small">
+                                        48 meses
+                                        <img src="img/camera-de-video.png" alt="" class="icon-small">
+                                        Ead Digital
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Saiba mais</a>
+                                </div>
+                            </div>
+                            <br>
                         </div>
                     </div>
-                    <br>
-                </div>
-                <div class="col-sm-6 mb-3 mb-sm-0">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Empreendedorismo Digital</h5>
-                            <p class="card-text">
-                                <img src="img/ferramenta-de-simbolo-de-interface-de-calendario.png" alt=""
-                                    class="icon-small">
-                                48 meses
-                                <img src="img/camera-de-video.png" alt="" class="icon-small">
-                                Ead Digital
-                            </p>
-                            <a href="#" class="btn btn-primary">Saiba mais</a>
-                        </div>
-                    </div>
-                    <br>
-                </div>
-                <div class="col-sm-6 mb-3 mb-sm-0">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Gestão Comercial</h5>
-                            <p class="card-text">
-                                <img src="img/ferramenta-de-simbolo-de-interface-de-calendario.png" alt=""
-                                    class="icon-small">
-                                48 meses
-                                <img src="img/camera-de-video.png" alt="" class="icon-small">
-                                Ead Digital
-                            </p>
-                            <a href="#" class="btn btn-primary">Saiba mais</a>
-                        </div>
-                    </div>
-                    <br>
-                </div>
-                <div class="col-sm-6 mb-3 mb-sm-0">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Gestão da Qualidade</h5>
-                            <p class="card-text">
-                                <img src="img/ferramenta-de-simbolo-de-interface-de-calendario.png" alt=""
-                                    class="icon-small">
-                                48 meses
-                                <img src="img/camera-de-video.png" alt="" class="icon-small">
-                                Ead Digital
-                            </p>
-                            <a href="#" class="btn btn-primary">Saiba mais</a>
-                        </div>
-                    </div>
-                    <br>
-                </div>
-                <div class="col-sm-6 mb-3 mb-sm-0">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Gestão de Recursos Humanos</h5>
-                            <p class="card-text">
-                                <img src="img/ferramenta-de-simbolo-de-interface-de-calendario.png" alt=""
-                                    class="icon-small">
-                                48 meses
-                                <img src="img/camera-de-video.png" alt="" class="icon-small">
-                                Ead Digital
-                            </p>
-                            <a href="#" class="btn btn-primary">Saiba mais</a>
-                        </div>
-                    </div>
-                    <br>
-                </div>
-                <div class="col-sm-6 mb-3 mb-sm-0">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Gestão Financeira</h5>
-                            <p class="card-text">
-                                <img src="img/ferramenta-de-simbolo-de-interface-de-calendario.png" alt=""
-                                    class="icon-small">
-                                48 meses
-                                <img src="img/camera-de-video.png" alt="" class="icon-small">
-                                Ead Digital
-                            </p>
-                            <a href="#" class="btn btn-primary">Saiba mais</a>
-                        </div>
-                    </div>
-                    <br>
-                </div>
-                <div class="col-sm-6 mb-3 mb-sm-0">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Gestão Pública</h5>
-                            <p class="card-text">
-                                <img src="img/ferramenta-de-simbolo-de-interface-de-calendario.png" alt=""
-                                    class="icon-small">
-                                48 meses
-                                <img src="img/camera-de-video.png" alt="" class="icon-small">
-                                Ead Digital
-                            </p>
-                            <a href="#" class="btn btn-primary">Saiba mais</a>
-                        </div>
-                    </div>
-                    <br>
-                </div>
-                <div class="col-sm-6 mb-3 mb-sm-0">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Logística</h5>
-                            <p class="card-text">
-                                <img src="img/ferramenta-de-simbolo-de-interface-de-calendario.png" alt=""
-                                    class="icon-small">
-                                48 meses
-                                <img src="img/camera-de-video.png" alt="" class="icon-small">
-                                Ead Digital
-                            </p>
-                            <a href="#" class="btn btn-primary">Saiba mais</a>
-                        </div>
-                    </div>
-                    <br>
-                </div>
-                <div class="col-sm-6 mb-3 mb-sm-0">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Marketing</h5>
-                            <p class="card-text">
-                                <img src="img/ferramenta-de-simbolo-de-interface-de-calendario.png" alt=""
-                                    class="icon-small">
-                                48 meses
-                                <img src="img/camera-de-video.png" alt="" class="icon-small">
-                                Ead Digital
-                            </p>
-                            <a href="#" class="btn btn-primary">Saiba mais</a>
-                        </div>
-                    </div>
-                    <br>
-                </div>
-                <div class="col-sm-6 mb-3 mb-sm-0">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Gestão de Trânsito</h5>
-                            <p class="card-text">
-                                <img src="img/ferramenta-de-simbolo-de-interface-de-calendario.png" alt=""
-                                    class="icon-small">
-                                48 meses
-                                <img src="img/camera-de-video.png" alt="" class="icon-small">
-                                Ead Digital
-                            </p>
-                            <a href="#" class="btn btn-primary">Saiba mais</a>
-                        </div>
-                    </div>
-                    <br>
-                </div>
-                <div class="col-sm-6 mb-3 mb-sm-0">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Processos Gerenciais</h5>
-                            <p class="card-text">
-                                <img src="img/ferramenta-de-simbolo-de-interface-de-calendario.png" alt=""
-                                    class="icon-small">
-                                48 meses
-                                <img src="img/camera-de-video.png" alt="" class="icon-small">
-                                Ead Digital
-                            </p>
-                            <a href="#" class="btn btn-primary">Saiba mais</a>
-                        </div>
-                    </div>
-                    <br>
-                </div>
-                <div class="col-sm-6 mb-3 mb-sm-0">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Administração</h5>
-                            <p class="card-text">
-                                <img src="img/ferramenta-de-simbolo-de-interface-de-calendario.png" alt=""
-                                    class="icon-small">
-                                48 meses
-                                <img src="img/camera-de-video.png" alt="" class="icon-small">
-                                Ead Digital
-                            </p>
-                            <a href="#" class="btn btn-primary">Saiba mais</a>
-                        </div>
-                    </div>
-                    <br>
-                </div>
-                <div class="col-sm-6 mb-3 mb-sm-0">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Ciências Contábeis</h5>
-                            <p class="card-text">
-                                <img src="img/ferramenta-de-simbolo-de-interface-de-calendario.png" alt=""
-                                    class="icon-small">
-                                48 meses
-                                <img src="img/camera-de-video.png" alt="" class="icon-small">
-                                Ead Digital
-                            </p>
-                            <a href="#" class="btn btn-primary">Saiba mais</a>
-                        </div>
-                    </div>
-                    <br>
-                </div>
-                <div class="col-sm-6 mb-3 mb-sm-0">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Ciências Econômicas</h5>
-                            <p class="card-text">
-                                <img src="img/ferramenta-de-simbolo-de-interface-de-calendario.png" alt=""
-                                    class="icon-small">
-                                48 meses
-                                <img src="img/camera-de-video.png" alt="" class="icon-small">
-                                Ead Digital
-                            </p>
-                            <a href="#" class="btn btn-primary">Saiba mais</a>
-                        </div>
-                    </div>
-                    <br>
-                </div>
-                <div class="col-sm-6 mb-3 mb-sm-0">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Superior de Tecnologia em Negócios Imobiliários</h5>
-                            <p class="card-text">
-                                <img src="img/ferramenta-de-simbolo-de-interface-de-calendario.png" alt=""
-                                    class="icon-small">
-                                48 meses
-                                <img src="img/camera-de-video.png" alt="" class="icon-small">
-                                Ead Digital
-                            </p>
-                            <a href="#" class="btn btn-primary">Saiba mais</a>
-                        </div>
-                    </div>
-                    <br>
                 </div>
             </div>
-        </div>
 
-        <!-- ----------------SAÚDE-------------------- -->
-
-        <div id="bootstrap-example-saude" class="area-content" style="display: none;">
-            <div class="row">
-                <div class="col-sm-6 mb-3 mb-sm-0">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Estética e Cosméticos</h5>
-                            <p class="card-text">
-                                <img src="img/ferramenta-de-simbolo-de-interface-de-calendario.png" alt=""
-                                    class="icon-small">
-                                48 meses
-                                <img src="img/camera-de-video.png" alt="" class="icon-small">
-                                Ead Digital
-                            </p>
-                            <a href="#" class="btn btn-primary">Saiba mais</a>
+            <!-- ----------------SAÚDE-------------------- -->
+            <div class="saude">
+                <div id="bootstrap-example-saude" class="area-content" style="display: none;">
+                    <div class="row">
+                        <div class="col-sm-6 mb-3 mb-sm-0">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Estética e Cosméticos</h5>
+                                    <p class="card-text">
+                                        <img src="img/ferramenta-de-simbolo-de-interface-de-calendario.png" alt=""
+                                            class="icon-small">
+                                        48 meses
+                                        <img src="img/camera-de-video.png" alt="" class="icon-small">
+                                        Ead Digital
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Saiba mais</a>
+                                </div>
+                            </div>
+                            <br>
+                        </div>
+                        <div class="col-sm-6 mb-3 mb-sm-0">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Podologia</h5>
+                                    <p class="card-text">
+                                        <img src="img/ferramenta-de-simbolo-de-interface-de-calendario.png" alt=""
+                                            class="icon-small">
+                                        48 meses
+                                        <img src="img/camera-de-video.png" alt="" class="icon-small">
+                                        Ead Digital
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Saiba mais</a>
+                                </div>
+                            </div>
+                            <br>
+                        </div>
+                        <div class="col-sm-6 mb-3 mb-sm-0">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Gestão Hospitalar</h5>
+                                    <p class="card-text">
+                                        <img src="img/ferramenta-de-simbolo-de-interface-de-calendario.png" alt=""
+                                            class="icon-small">
+                                        48 meses
+                                        <img src="img/camera-de-video.png" alt="" class="icon-small">
+                                        Ead Digital
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Saiba mais</a>
+                                </div>
+                            </div>
+                            <br>
+                        </div>
+                        <div class="col-sm-6 mb-3 mb-sm-0">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Enfermagem</h5>
+                                    <p class="card-text">
+                                        <img src="img/ferramenta-de-simbolo-de-interface-de-calendario.png" alt=""
+                                            class="icon-small">
+                                        48 meses
+                                        <img src="img/camera-de-video.png" alt="" class="icon-small">
+                                        Ead Digital
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Saiba mais</a>
+                                </div>
+                            </div>
+                            <br>
+                        </div>
+                        <div class="col-sm-6 mb-3 mb-sm-0">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Biomedicina</h5>
+                                    <p class="card-text">
+                                        <img src="img/ferramenta-de-simbolo-de-interface-de-calendario.png" alt=""
+                                            class="icon-small">
+                                        48 meses
+                                        <img src="img/camera-de-video.png" alt="" class="icon-small">
+                                        Ead Digital
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Saiba mais</a>
+                                </div>
+                            </div>
+                            <br>
+                        </div>
+                        <div class="col-sm-6 mb-3 mb-sm-0">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Nutrição</h5>
+                                    <p class="card-text">
+                                        <img src="img/ferramenta-de-simbolo-de-interface-de-calendario.png" alt=""
+                                            class="icon-small">
+                                        48 meses
+                                        <img src="img/camera-de-video.png" alt="" class="icon-small">
+                                        Ead Digital
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Saiba mais</a>
+                                </div>
+                            </div>
+                            <br>
+                        </div>
+                        <div class="col-sm-6 mb-3 mb-sm-0">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Farmácia</h5>
+                                    <p class="card-text">
+                                        <img src="img/ferramenta-de-simbolo-de-interface-de-calendario.png" alt=""
+                                            class="icon-small">
+                                        48 meses
+                                        <img src="img/camera-de-video.png" alt="" class="icon-small">
+                                        Ead Digital
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Saiba mais</a>
+                                </div>
+                            </div>
+                            <br>
+                        </div>
+                        <div class="col-sm-6 mb-3 mb-sm-0">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Fisioterapia</h5>
+                                    <p class="card-text">
+                                        <img src="img/ferramenta-de-simbolo-de-interface-de-calendario.png" alt=""
+                                            class="icon-small">
+                                        48 meses
+                                        <img src="img/camera-de-video.png" alt="" class="icon-small">
+                                        Ead Digital
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Saiba mais</a>
+                                </div>
+                            </div>
+                            <br>
+                        </div>
+                        <div class="col-sm-6 mb-3 mb-sm-0">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Terapia Ocupacional</h5>
+                                    <p class="card-text">
+                                        <img src="img/ferramenta-de-simbolo-de-interface-de-calendario.png" alt=""
+                                            class="icon-small">
+                                        48 meses
+                                        <img src="img/camera-de-video.png" alt="" class="icon-small">
+                                        Ead Digital
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Saiba mais</a>
+                                </div>
+                            </div>
+                            <br>
                         </div>
                     </div>
-                    <br>
-                </div>
-                <div class="col-sm-6 mb-3 mb-sm-0">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Podologia</h5>
-                            <p class="card-text">
-                                <img src="img/ferramenta-de-simbolo-de-interface-de-calendario.png" alt=""
-                                    class="icon-small">
-                                48 meses
-                                <img src="img/camera-de-video.png" alt="" class="icon-small">
-                                Ead Digital
-                            </p>
-                            <a href="#" class="btn btn-primary">Saiba mais</a>
-                        </div>
-                    </div>
-                    <br>
-                </div>
-                <div class="col-sm-6 mb-3 mb-sm-0">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Gestão Hospitalar</h5>
-                            <p class="card-text">
-                                <img src="img/ferramenta-de-simbolo-de-interface-de-calendario.png" alt=""
-                                    class="icon-small">
-                                48 meses
-                                <img src="img/camera-de-video.png" alt="" class="icon-small">
-                                Ead Digital
-                            </p>
-                            <a href="#" class="btn btn-primary">Saiba mais</a>
-                        </div>
-                    </div>
-                    <br>
-                </div>
-                <div class="col-sm-6 mb-3 mb-sm-0">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Enfermagem</h5>
-                            <p class="card-text">
-                                <img src="img/ferramenta-de-simbolo-de-interface-de-calendario.png" alt=""
-                                    class="icon-small">
-                                48 meses
-                                <img src="img/camera-de-video.png" alt="" class="icon-small">
-                                Ead Digital
-                            </p>
-                            <a href="#" class="btn btn-primary">Saiba mais</a>
-                        </div>
-                    </div>
-                    <br>
-                </div>
-                <div class="col-sm-6 mb-3 mb-sm-0">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Biomedicina</h5>
-                            <p class="card-text">
-                                <img src="img/ferramenta-de-simbolo-de-interface-de-calendario.png" alt=""
-                                    class="icon-small">
-                                48 meses
-                                <img src="img/camera-de-video.png" alt="" class="icon-small">
-                                Ead Digital
-                            </p>
-                            <a href="#" class="btn btn-primary">Saiba mais</a>
-                        </div>
-                    </div>
-                    <br>
-                </div>
-                <div class="col-sm-6 mb-3 mb-sm-0">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Nutrição</h5>
-                            <p class="card-text">
-                                <img src="img/ferramenta-de-simbolo-de-interface-de-calendario.png" alt=""
-                                    class="icon-small">
-                                48 meses
-                                <img src="img/camera-de-video.png" alt="" class="icon-small">
-                                Ead Digital
-                            </p>
-                            <a href="#" class="btn btn-primary">Saiba mais</a>
-                        </div>
-                    </div>
-                    <br>
-                </div>
-                <div class="col-sm-6 mb-3 mb-sm-0">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Farmácia</h5>
-                            <p class="card-text">
-                                <img src="img/ferramenta-de-simbolo-de-interface-de-calendario.png" alt=""
-                                    class="icon-small">
-                                48 meses
-                                <img src="img/camera-de-video.png" alt="" class="icon-small">
-                                Ead Digital
-                            </p>
-                            <a href="#" class="btn btn-primary">Saiba mais</a>
-                        </div>
-                    </div>
-                    <br>
-                </div>
-                <div class="col-sm-6 mb-3 mb-sm-0">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Fisioterapia</h5>
-                            <p class="card-text">
-                                <img src="img/ferramenta-de-simbolo-de-interface-de-calendario.png" alt=""
-                                    class="icon-small">
-                                48 meses
-                                <img src="img/camera-de-video.png" alt="" class="icon-small">
-                                Ead Digital
-                            </p>
-                            <a href="#" class="btn btn-primary">Saiba mais</a>
-                        </div>
-                    </div>
-                    <br>
-                </div>
-                <div class="col-sm-6 mb-3 mb-sm-0">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Terapia Ocupacional</h5>
-                            <p class="card-text">
-                                <img src="img/ferramenta-de-simbolo-de-interface-de-calendario.png" alt=""
-                                    class="icon-small">
-                                48 meses
-                                <img src="img/camera-de-video.png" alt="" class="icon-small">
-                                Ead Digital
-                            </p>
-                            <a href="#" class="btn btn-primary">Saiba mais</a>
-                        </div>
-                    </div>
-                    <br>
                 </div>
             </div>
-        </div>
 
-        <!-- ----------------TECNOLOGIA-------------------- -->
-
-        <div id="bootstrap-example-tecnologia" class="area-content" style="display: none;">
-            <div class="row">
-                <div class="col-sm-6 mb-3 mb-sm-0">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Computação em Núvem</h5>
-                            <p class="card-text">
-                                <img src="img/ferramenta-de-simbolo-de-interface-de-calendario.png" alt=""
-                                    class="icon-small">
-                                48 meses
-                                <img src="img/camera-de-video.png" alt="" class="icon-small">
-                                Ead Digital
-                            </p>
-                            <a href="#" class="btn btn-primary">Saiba mais</a>
+            <!-- ----------------TECNOLOGIA-------------------- -->
+            <div class="tecnologia" style="
+                height: 100vh !important;
+                box-sizing: border-box !important;
+                overflow-y: auto !important;
+                overflow-x: hidden !important;
+            ">
+                <div id="bootstrap-example-tecnologia" class="area-content" style="display: none;">
+                    <div class="row">
+                        <div class="col-sm-6 mb-3 mb-sm-0">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Computação em Núvem</h5>
+                                    <p class="card-text">
+                                        <img src="img/ferramenta-de-simbolo-de-interface-de-calendario.png" alt=""
+                                            class="icon-small">
+                                        48 meses
+                                        <img src="img/camera-de-video.png" alt="" class="icon-small">
+                                        Ead Digital
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Saiba mais</a>
+                                </div>
+                            </div>
+                            <br>
+                        </div>
+                        <div class="col-sm-6 mb-3 mb-sm-0">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Experiência do Usuário e Modelagem de Projetos Inovadores
+                                    </h5>
+                                    <p class="card-text">
+                                        <img src="img/ferramenta-de-simbolo-de-interface-de-calendario.png" alt=""
+                                            class="icon-small">
+                                        48 meses
+                                        <img src="img/camera-de-video.png" alt="" class="icon-small">
+                                        Ead Digital
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Saiba mais</a>
+                                </div>
+                            </div>
+                            <br>
+                        </div>
+                        <div class="col-sm-6 mb-3 mb-sm-0">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Inteligência Artificial</h5>
+                                    <p class="card-text">
+                                        <img src="img/ferramenta-de-simbolo-de-interface-de-calendario.png" alt=""
+                                            class="icon-small">
+                                        48 meses
+                                        <img src="img/camera-de-video.png" alt="" class="icon-small">
+                                        Ead Digital
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Saiba mais</a>
+                                </div>
+                            </div>
+                            <br>
+                        </div>
+                        <div class="col-sm-6 mb-3 mb-sm-0">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Internet das Coisas</h5>
+                                    <p class="card-text">
+                                        <img src="img/ferramenta-de-simbolo-de-interface-de-calendario.png" alt=""
+                                            class="icon-small">
+                                        48 meses
+                                        <img src="img/camera-de-video.png" alt="" class="icon-small">
+                                        Ead Digital
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Saiba mais</a>
+                                </div>
+                            </div>
+                            <br>
+                        </div>
+                        <div class="col-sm-6 mb-3 mb-sm-0">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Service Desing</h5>
+                                    <p class="card-text">
+                                        <img src="img/ferramenta-de-simbolo-de-interface-de-calendario.png" alt=""
+                                            class="icon-small">
+                                        48 meses
+                                        <img src="img/camera-de-video.png" alt="" class="icon-small">
+                                        Ead Digital
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Saiba mais</a>
+                                </div>
+                            </div>
+                            <br>
+                        </div>
+                        <div class="col-sm-6 mb-3 mb-sm-0">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Análise e Desenvolvimento de Sistemas</h5>
+                                    <p class="card-text">
+                                        <img src="img/ferramenta-de-simbolo-de-interface-de-calendario.png" alt=""
+                                            class="icon-small">
+                                        48 meses
+                                        <img src="img/camera-de-video.png" alt="" class="icon-small">
+                                        Ead Digital
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Saiba mais</a>
+                                </div>
+                            </div>
+                            <br>
+                        </div>
+                        <div class="col-sm-6 mb-3 mb-sm-0">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Game Design</h5>
+                                    <p class="card-text">
+                                        <img src="img/ferramenta-de-simbolo-de-interface-de-calendario.png" alt=""
+                                            class="icon-small">
+                                        48 meses
+                                        <img src="img/camera-de-video.png" alt="" class="icon-small">
+                                        Ead Digital
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Saiba mais</a>
+                                </div>
+                            </div>
+                            <br>
+                        </div>
+                        <div class="col-sm-6 mb-3 mb-sm-0">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Coding</h5>
+                                    <p class="card-text">
+                                        <img src="img/ferramenta-de-simbolo-de-interface-de-calendario.png" alt=""
+                                            class="icon-small">
+                                        48 meses
+                                        <img src="img/camera-de-video.png" alt="" class="icon-small">
+                                        Ead Digital
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Saiba mais</a>
+                                </div>
+                            </div>
+                            <br>
+                        </div>
+                        <div class="col-sm-6 mb-3 mb-sm-0">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Data Science</h5>
+                                    <p class="card-text">
+                                        <img src="img/ferramenta-de-simbolo-de-interface-de-calendario.png" alt=""
+                                            class="icon-small">
+                                        48 meses
+                                        <img src="img/camera-de-video.png" alt="" class="icon-small">
+                                        Ead Digital
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Saiba mais</a>
+                                </div>
+                            </div>
+                            <br>
+                        </div>
+                        <div class="col-sm-6 mb-3 mb-sm-0">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Digital Security</h5>
+                                    <p class="card-text">
+                                        <img src="img/ferramenta-de-simbolo-de-interface-de-calendario.png" alt=""
+                                            class="icon-small">
+                                        48 meses
+                                        <img src="img/camera-de-video.png" alt="" class="icon-small">
+                                        Ead Digital
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Saiba mais</a>
+                                </div>
+                            </div>
+                            <br>
+                        </div>
+                        <div class="col-sm-6 mb-3 mb-sm-0">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Filmmaker</h5>
+                                    <p class="card-text">
+                                        <img src="img/ferramenta-de-simbolo-de-interface-de-calendario.png" alt=""
+                                            class="icon-small">
+                                        48 meses
+                                        <img src="img/camera-de-video.png" alt="" class="icon-small">
+                                        Ead Digital
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Saiba mais</a>
+                                </div>
+                            </div>
+                            <br>
+                        </div>
+                        <div class="col-sm-6 mb-3 mb-sm-0">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Streaming</h5>
+                                    <p class="card-text">
+                                        <img src="img/ferramenta-de-simbolo-de-interface-de-calendario.png" alt=""
+                                            class="icon-small">
+                                        48 meses
+                                        <img src="img/camera-de-video.png" alt="" class="icon-small">
+                                        Ead Digital
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Saiba mais</a>
+                                </div>
+                            </div>
+                            <br>
+                        </div>
+                        <div class="col-sm-6 mb-3 mb-sm-0">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Ciências Aeronáuticas</h5>
+                                    <p class="card-text">
+                                        <img src="img/ferramenta-de-simbolo-de-interface-de-calendario.png" alt=""
+                                            class="icon-small">
+                                        48 meses
+                                        <img src="img/camera-de-video.png" alt="" class="icon-small">
+                                        Ead Digital
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Saiba mais</a>
+                                </div>
+                            </div>
+                            <br>
+                        </div>
+                        <div class="col-sm-6 mb-3 mb-sm-0">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Gestão da Tecnologia da Informação</h5>
+                                    <p class="card-text">
+                                        <img src="img/ferramenta-de-simbolo-de-interface-de-calendario.png" alt=""
+                                            class="icon-small">
+                                        48 meses
+                                        <img src="img/camera-de-video.png" alt="" class="icon-small">
+                                        Ead Digital
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Saiba mais</a>
+                                </div>
+                            </div>
+                            <br>
                         </div>
                     </div>
-                    <br>
-                </div>
-                <div class="col-sm-6 mb-3 mb-sm-0">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Experiência do Usuário e Modelagem de Projetos Inovadores</h5>
-                            <p class="card-text">
-                                <img src="img/ferramenta-de-simbolo-de-interface-de-calendario.png" alt=""
-                                    class="icon-small">
-                                48 meses
-                                <img src="img/camera-de-video.png" alt="" class="icon-small">
-                                Ead Digital
-                            </p>
-                            <a href="#" class="btn btn-primary">Saiba mais</a>
-                        </div>
-                    </div>
-                    <br>
-                </div>
-                <div class="col-sm-6 mb-3 mb-sm-0">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Inteligência Artificial</h5>
-                            <p class="card-text">
-                                <img src="img/ferramenta-de-simbolo-de-interface-de-calendario.png" alt=""
-                                    class="icon-small">
-                                48 meses
-                                <img src="img/camera-de-video.png" alt="" class="icon-small">
-                                Ead Digital
-                            </p>
-                            <a href="#" class="btn btn-primary">Saiba mais</a>
-                        </div>
-                    </div>
-                    <br>
-                </div>
-                <div class="col-sm-6 mb-3 mb-sm-0">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Internet das Coisas</h5>
-                            <p class="card-text">
-                                <img src="img/ferramenta-de-simbolo-de-interface-de-calendario.png" alt=""
-                                    class="icon-small">
-                                48 meses
-                                <img src="img/camera-de-video.png" alt="" class="icon-small">
-                                Ead Digital
-                            </p>
-                            <a href="#" class="btn btn-primary">Saiba mais</a>
-                        </div>
-                    </div>
-                    <br>
-                </div>
-                <div class="col-sm-6 mb-3 mb-sm-0">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Service Desing</h5>
-                            <p class="card-text">
-                                <img src="img/ferramenta-de-simbolo-de-interface-de-calendario.png" alt=""
-                                    class="icon-small">
-                                48 meses
-                                <img src="img/camera-de-video.png" alt="" class="icon-small">
-                                Ead Digital
-                            </p>
-                            <a href="#" class="btn btn-primary">Saiba mais</a>
-                        </div>
-                    </div>
-                    <br>
-                </div>
-                <div class="col-sm-6 mb-3 mb-sm-0">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Análise e Desenvolvimento de Sistemas</h5>
-                            <p class="card-text">
-                                <img src="img/ferramenta-de-simbolo-de-interface-de-calendario.png" alt=""
-                                    class="icon-small">
-                                48 meses
-                                <img src="img/camera-de-video.png" alt="" class="icon-small">
-                                Ead Digital
-                            </p>
-                            <a href="#" class="btn btn-primary">Saiba mais</a>
-                        </div>
-                    </div>
-                    <br>
-                </div>
-                <div class="col-sm-6 mb-3 mb-sm-0">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Game Design</h5>
-                            <p class="card-text">
-                                <img src="img/ferramenta-de-simbolo-de-interface-de-calendario.png" alt=""
-                                    class="icon-small">
-                                48 meses
-                                <img src="img/camera-de-video.png" alt="" class="icon-small">
-                                Ead Digital
-                            </p>
-                            <a href="#" class="btn btn-primary">Saiba mais</a>
-                        </div>
-                    </div>
-                    <br>
-                </div>
-                <div class="col-sm-6 mb-3 mb-sm-0">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Coding</h5>
-                            <p class="card-text">
-                                <img src="img/ferramenta-de-simbolo-de-interface-de-calendario.png" alt=""
-                                    class="icon-small">
-                                48 meses
-                                <img src="img/camera-de-video.png" alt="" class="icon-small">
-                                Ead Digital
-                            </p>
-                            <a href="#" class="btn btn-primary">Saiba mais</a>
-                        </div>
-                    </div>
-                    <br>
-                </div>
-                <div class="col-sm-6 mb-3 mb-sm-0">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Data Science</h5>
-                            <p class="card-text">
-                                <img src="img/ferramenta-de-simbolo-de-interface-de-calendario.png" alt=""
-                                    class="icon-small">
-                                48 meses
-                                <img src="img/camera-de-video.png" alt="" class="icon-small">
-                                Ead Digital
-                            </p>
-                            <a href="#" class="btn btn-primary">Saiba mais</a>
-                        </div>
-                    </div>
-                    <br>
-                </div>
-                <div class="col-sm-6 mb-3 mb-sm-0">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Digital Security</h5>
-                            <p class="card-text">
-                                <img src="img/ferramenta-de-simbolo-de-interface-de-calendario.png" alt=""
-                                    class="icon-small">
-                                48 meses
-                                <img src="img/camera-de-video.png" alt="" class="icon-small">
-                                Ead Digital
-                            </p>
-                            <a href="#" class="btn btn-primary">Saiba mais</a>
-                        </div>
-                    </div>
-                    <br>
-                </div>
-                <div class="col-sm-6 mb-3 mb-sm-0">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Filmmaker</h5>
-                            <p class="card-text">
-                                <img src="img/ferramenta-de-simbolo-de-interface-de-calendario.png" alt=""
-                                    class="icon-small">
-                                48 meses
-                                <img src="img/camera-de-video.png" alt="" class="icon-small">
-                                Ead Digital
-                            </p>
-                            <a href="#" class="btn btn-primary">Saiba mais</a>
-                        </div>
-                    </div>
-                    <br>
-                </div>
-                <div class="col-sm-6 mb-3 mb-sm-0">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Streaming</h5>
-                            <p class="card-text">
-                                <img src="img/ferramenta-de-simbolo-de-interface-de-calendario.png" alt=""
-                                    class="icon-small">
-                                48 meses
-                                <img src="img/camera-de-video.png" alt="" class="icon-small">
-                                Ead Digital
-                            </p>
-                            <a href="#" class="btn btn-primary">Saiba mais</a>
-                        </div>
-                    </div>
-                    <br>
-                </div>
-                <div class="col-sm-6 mb-3 mb-sm-0">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Ciências Aeronáuticas</h5>
-                            <p class="card-text">
-                                <img src="img/ferramenta-de-simbolo-de-interface-de-calendario.png" alt=""
-                                    class="icon-small">
-                                48 meses
-                                <img src="img/camera-de-video.png" alt="" class="icon-small">
-                                Ead Digital
-                            </p>
-                            <a href="#" class="btn btn-primary">Saiba mais</a>
-                        </div>
-                    </div>
-                    <br>
-                </div>
-                <div class="col-sm-6 mb-3 mb-sm-0">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Gestão da Tecnologia da Informação</h5>
-                            <p class="card-text">
-                                <img src="img/ferramenta-de-simbolo-de-interface-de-calendario.png" alt=""
-                                    class="icon-small">
-                                48 meses
-                                <img src="img/camera-de-video.png" alt="" class="icon-small">
-                                Ead Digital
-                            </p>
-                            <a href="#" class="btn btn-primary">Saiba mais</a>
-                        </div>
-                    </div>
-                    <br>
                 </div>
             </div>
         </div>
     </div>
+    <script>
+        document.getElementById('arquitetura-e-design-link').addEventListener('click', function (event) {
+            event.preventDefault();
+            showOnlySelectedArea('bootstrap-example-arquitetura');
+        });
 
-    <script src="app.js"></script>
+        document.getElementById('ciencias-juridicas-link').addEventListener('click', function (event) {
+            event.preventDefault();
+            showOnlySelectedArea('bootstrap-example-juridico');
+        });
+
+        document.getElementById('ciencias-humanas-link').addEventListener('click', function (event) {
+            event.preventDefault();
+            showOnlySelectedArea('bootstrap-example-humanas');
+        });
+
+        document.getElementById('educacao-link').addEventListener('click', function (event) {
+            event.preventDefault();
+            showOnlySelectedArea('bootstrap-example-educacao');
+        });
+
+        document.getElementById('engenharia-link').addEventListener('click', function (event) {
+            event.preventDefault();
+            showOnlySelectedArea('bootstrap-example-engenharia');
+        });
+
+        document.getElementById('negocios-link').addEventListener('click', function (event) {
+            event.preventDefault();
+            showOnlySelectedArea('bootstrap-example-negocios');
+        });
+
+        document.getElementById('saude-link').addEventListener('click', function (event) {
+            event.preventDefault();
+            showOnlySelectedArea('bootstrap-example-saude');
+        });
+
+        document.getElementById('saude-link').addEventListener('click', function (event) {
+            event.preventDefault();
+            showOnlySelectedArea('bootstrap-example-saude');
+        });
+
+        document.getElementById('tecnologia-link').addEventListener('click', function (event) {
+            event.preventDefault();
+            showOnlySelectedArea('bootstrap-example-tecnologia');
+        });
+
+        document.getElementById('todos-link').addEventListener('click', function (event) {
+            event.preventDefault();
+            showAllAreas();
+        });
+
+
+        function showOnlySelectedArea(areaId) {
+            const areaContents = document.querySelectorAll('.area-content');
+            areaContents.forEach(content => content.style.display = 'none');
+            document.getElementById(areaId).style.display = 'block';
+        }
+
+        function showAllAreas() {
+            const areaContents = document.querySelectorAll('.area-content');
+            areaContents.forEach(content => content.style.display = 'block');
+        }
+
+
+    </script>
 </body>
 
 </html>
